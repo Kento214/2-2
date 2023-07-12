@@ -15,7 +15,7 @@ if "increment" not in st.session_state:
     st.session_state["increment"] = 0
 
 
-if submit_btn and user_input=="2315"and st.session_state["increment"]<=2:#送信ボタンを押して暗号が合っていれば
+if submit_btn and user_input=="2315"and st.session_state["increment"]<2:#送信ボタンを押して暗号が合っていれば
    st.image(image,width=700)#救出画像を表示する
    st.write("ゲーム　クリア！")
    st.write("おめでとう！")
