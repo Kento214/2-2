@@ -13,6 +13,8 @@ mistake=Image.open("IMG_2175.PNG")
 
 if submit_btn and user_input=="2315":#送信ボタンを押して暗号が合っていれば
    st.image(image,width=700)#救出画像を表示する
+   st.write("ゲーム　クリア！")
+   st.write("おめでとう！")
    st.balloons()#風船を飛ばす
 
 elif submit_btn:#違うとき
