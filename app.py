@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 st.title("SUPER KAZUMI BROS.")#タイトル入力
-st.write("暗号を入力しよう（２回までしか入力できません")#文入力
+st.write("暗号を入力しよう（２回までしか入力できません）")#文入力
 
 user_input = st.text_input("暗号")#テキストボックス挿入取得
 
