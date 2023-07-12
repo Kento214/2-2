@@ -28,6 +28,7 @@ elif submit_btn and st.session_state["increment"]==0:#違うとき
 
 elif submit_btn and st.session_state["increment"] >=1:
      st.write("GAMEOVER")
+     st.session_state["increment"] += 1
 
 
 
