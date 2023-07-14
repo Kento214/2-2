@@ -62,7 +62,7 @@ elif submit_btn and st.session_state["increment"]==0:#違うとき
      audio_placeholder.markdown(audio_html,unsafe_allow_html=True)
 
     
-     st.image(mistake,use_column_width=True))#失敗画像を表示する
+     st.image(mistake,use_column_width=True)#失敗画像を表示する
      st.session_state["increment"] += 1
 
 
