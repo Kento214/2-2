@@ -14,11 +14,13 @@ image = Image.open("IMG_2167.PNG")
 
 mistake=Image.open("IMG_2175.PNG") 
 
+gameover=Image.open("IMG_2154.png")
+
 if "increment" not in st.session_state:
     st.session_state["increment"] = 0
 
 
-if submit_btn and user_input=="2315"and st.session_state["increment"]<2:#送信ボタンを押して暗号が合っていれば
+if submit_btn and user_input=="2113"and st.session_state["increment"]<2:#送信ボタンを押して暗号が合っていれば
    audio_path1 = "Clear.mp3"
 
    audio_placeholder = st.empty()
@@ -86,7 +88,7 @@ elif submit_btn and st.session_state["increment"] >=1:
      audio_placeholder.markdown(audio_html,unsafe_allow_html=True)
 
      
-     st.write("GAMEOVER")
+     st.image(gameover,use_column_width=True)
      st.session_state["increment"] += 1
 
 
